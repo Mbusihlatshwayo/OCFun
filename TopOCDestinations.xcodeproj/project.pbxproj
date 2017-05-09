@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CCA340211EC17B5800C3E4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA340201EC17B5800C3E4AA /* AppDelegate.swift */; };
-		CCA340231EC17B5800C3E4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA340221EC17B5800C3E4AA /* ViewController.swift */; };
+		CCA340231EC17B5800C3E4AA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA340221EC17B5800C3E4AA /* MainVC.swift */; };
 		CCA340261EC17B5800C3E4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA340241EC17B5800C3E4AA /* Main.storyboard */; };
 		CCA340281EC17B5800C3E4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA340271EC17B5800C3E4AA /* Assets.xcassets */; };
 		CCA3402B1EC17B5800C3E4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA340291EC17B5800C3E4AA /* LaunchScreen.storyboard */; };
+		CCA340361EC1863900C3E4AA /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA340351EC1863900C3E4AA /* VideoVC.swift */; };
+		CCA340381EC1878400C3E4AA /* OCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA340371EC1878400C3E4AA /* OCTableViewCell.swift */; };
+		CCA3403A1EC1895400C3E4AA /* OrangeCountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA340391EC1895400C3E4AA /* OrangeCountyInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCA3401D1EC17B5800C3E4AA /* TopOCDestinations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopOCDestinations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA340201EC17B5800C3E4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCA340221EC17B5800C3E4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCA340221EC17B5800C3E4AA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		CCA340251EC17B5800C3E4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCA340271EC17B5800C3E4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA3402A1EC17B5800C3E4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCA3402C1EC17B5800C3E4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA340351EC1863900C3E4AA /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		CCA340371EC1878400C3E4AA /* OCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCTableViewCell.swift; sourceTree = "<group>"; };
+		CCA340391EC1895400C3E4AA /* OrangeCountyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeCountyInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		CCA3401F1EC17B5800C3E4AA /* TopOCDestinations */ = {
 			isa = PBXGroup;
 			children = (
+				CCA340341EC17BF300C3E4AA /* Controller */,
+				CCA340331EC17BEC00C3E4AA /* View */,
+				CCA340321EC17BE100C3E4AA /* Model */,
 				CCA340201EC17B5800C3E4AA /* AppDelegate.swift */,
-				CCA340221EC17B5800C3E4AA /* ViewController.swift */,
 				CCA340241EC17B5800C3E4AA /* Main.storyboard */,
 				CCA340271EC17B5800C3E4AA /* Assets.xcassets */,
 				CCA340291EC17B5800C3E4AA /* LaunchScreen.storyboard */,
 				CCA3402C1EC17B5800C3E4AA /* Info.plist */,
 			);
 			path = TopOCDestinations;
+			sourceTree = "<group>";
+		};
+		CCA340321EC17BE100C3E4AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCA340391EC1895400C3E4AA /* OrangeCountyInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCA340331EC17BEC00C3E4AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCA340371EC1878400C3E4AA /* OCTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCA340341EC17BF300C3E4AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CCA340221EC17B5800C3E4AA /* MainVC.swift */,
+				CCA340351EC1863900C3E4AA /* VideoVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA340231EC17B5800C3E4AA /* ViewController.swift in Sources */,
+				CCA340361EC1863900C3E4AA /* VideoVC.swift in Sources */,
+				CCA3403A1EC1895400C3E4AA /* OrangeCountyInfo.swift in Sources */,
+				CCA340381EC1878400C3E4AA /* OCTableViewCell.swift in Sources */,
+				CCA340231EC17B5800C3E4AA /* MainVC.swift in Sources */,
 				CCA340211EC17B5800C3E4AA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
